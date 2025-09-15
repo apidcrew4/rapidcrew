@@ -30,9 +30,7 @@
     <h1>Apply to RapidCrew</h1>
     <p>Tell us about yourself and upload your resume. We’ll review and match you to open roles.</p>
 
-    <form id="applyForm" method="POST" action="/apply" enctype="multipart/form-data">
-  <!-- change action to your server endpoint or use Netlify Forms if hosting on Netlify -->
-
+    <form id="applyForm" method="POST" action="https://formspree.io/f/mldwkjdn" enctype="multipart/form-data">
   <div class="form-row">
     <label>Full name
       <input name="full_name" type="text" required>
@@ -70,17 +68,15 @@
     <input name="resume" type="file" accept=".pdf,.doc,.docx" required>
   </label>
 
-  <!-- New: Driver License / ID upload -->
   <label>Upload Driver’s License / ID (PDF, JPG, PNG — max 5 MB)
     <input name="id_upload" type="file" accept=".pdf,.jpg,.jpeg,.png" required>
   </label>
 
-  <!-- New: Last 4 of SSN -->
   <label>Last 4 digits of SSN
     <input name="ssn_last4" type="text" pattern="[0-9]{4}" maxlength="4" inputmode="numeric" required>
   </label>
 
-  <!-- honeypot -->
+  <!-- Honeypot -->
   <div style="display:none;">
     <label>Website
       <input name="website" type="text">
@@ -93,8 +89,8 @@
   </label>
 
   <button type="submit" class="btn-cta">Submit Application</button>
-  <div id="formMessage" class="form-message" aria-live="polite"></div>
 </form>
+
 
   </main>
 
@@ -108,3 +104,4 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+
