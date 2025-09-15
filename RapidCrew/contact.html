@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | RapidCrew</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+  <div class="container header-inner">
+    <img src="images/logo-horizontal.png" alt="RapidCrew logo" class="logo">
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="apply.html" class="btn-primary">Apply Now</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html" class="active">FAQ</a>
+    </nav>
+
+    <!-- Hamburger -->
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+  <!-- Hero -->
+  <section class="hero contact-hero" style="background-image: url('images/contact-hero.jpg')">
+    <div class="hero-inner">
+      <h1>Contact Us</h1>
+      <p>We’re here to answer your questions and help you get started.</p>
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <section class="contact-info">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p>You can reach us directly by phone or email:</p>
+      <ul>
+        <li><strong>Phone:</strong> (573) 419-2508</li>
+        <li><strong>Phone:</strong> (214) 898-9694</li>
+        <li><strong>Email:</strong> info@rapidcrew.com <!-- replace with Zoho email later --></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact-form">
+    <div class="container">
+      <h2>Send Us a Message</h2>
+      <form id="contactForm" method="POST" action="/contact">
+  <div class="form-row">
+    <label>
+      Name
+      <input type="text" name="name" required>
+    </label>
+    <label>
+      Email
+      <input type="email" name="email" required>
+    </label>
+  </div>
+  
+  <div class="form-row">
+    <label>
+      Phone
+      <input type="tel" name="phone" placeholder="+1 (___) ___-____" required>
+    </label>
+  </div>
+  
+  <label>
+    Message
+    <textarea name="message" rows="5" required></textarea>
+  </label>
+  
+  <button type="submit" class="btn-cta">Send Message</button>
+  <div id="contactMessage" class="form-message" aria-live="polite"></div>
+</form>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> RapidCrew. Operating since 2016.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
