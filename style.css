@@ -243,3 +243,20 @@ header img {
   text-decoration: underline;
 }
 
+.location-section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.location-section h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.map-embed {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
