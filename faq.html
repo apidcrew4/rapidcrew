@@ -3,83 +3,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ | RapidCrew</title>
+  
+  <!-- SEO Title -->
+  <title>Job Seeker FAQ | Employment Questions & Answers | RapidCrew</title>
+  
+  <!-- SEO Description -->
+  <meta name="description" content="Find answers to common questions about applying for jobs, interview processes, and hiring requirements at RapidCrew staffing agency in Duncanville, TX.">
+  
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "RapidCrew",
+    "image": "https://rapidcrew.online/images/logo-horizontal.png",
+    "url": "https://rapidcrew.online/faq.html",
+    "telephone": "+19188860822",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "762 S. Forest Lane",
+      "addressLocality": "Duncanville",
+      "addressRegion": "TX",
+      "postalCode": "75116",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD FAQ Schema (Helps you show up bigger on Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "How do I apply for jobs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Simply head to our Apply Now page, complete the form, and upload your resume. Our team will review your details and match you with suitable opportunities."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Is there a fee to apply?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Applying through RapidCrew is completely free for job seekers."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How soon will I hear back?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most applicants hear from us within 3–5 business days. If your profile is a good match, we’ll contact you to schedule an interview."
+      }
+    }]
+  }
+  </script>
 </head>
-<body>
+<body class="page-faq">
 
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <img src="images/logo-horizontal.png" alt="RapidCrew logo" class="logo">
+      <a href="index.html">
+        <img src="images/logo-horizontal.png" alt="RapidCrew Staffing Logo" class="logo">
+      </a>
 
-      <!-- Navigation -->
-     <nav class="main-nav" id="main-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="apply.html">Apply Now</a>
-        <a href="contact.html">Contact</a>
-        <a href="faq.html">FAQ</a>
-        <a href="map.html" class="active">Location</a>
+      <!-- Navigation: "FAQ" is set to Active -->
+      <nav class="main-nav" id="main-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="apply.html">Apply Now</a>
+          <a href="contact.html">Contact</a>
+          <a href="faq.html" class="active">FAQ</a>
+          <a href="map.html">Location</a>
       </nav>
 
-      <!-- Hamburger -->
+      <!-- Hamburger Menu for Mobile -->
       <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">☰</button>
     </div>
   </header>
 
-  <!-- FAQ Section -->
-  <section class="faq">
-    <div class="container">
-      <h2>Frequently Asked Questions</h2>
-
-      <div class="faq-item">
-        <h3>How do I apply for jobs?</h3>
-        <p>Simply head to our <a href="apply.html">Apply Now</a> page, complete the form, and upload your resume. Our team will review your details and match you with suitable opportunities.</p>
+  <main>
+    <!-- FAQ Hero (Simplified) -->
+    <section class="hero faq-hero" style="background-color: var(--brand-dark); padding: 60px 0; text-align: center; color: white;">
+      <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <p>Everything you need to know about finding your next job with RapidCrew.</p>
       </div>
+    </section>
 
-      <div class="faq-item">
-        <h3>Is there a fee to apply?</h3>
-        <p>No. Applying through RapidCrew is completely free for job seekers.</p>
-      </div>
+    <!-- FAQ Content Section -->
+    <section class="faq container" style="padding: 60px 20px;">
+      <div class="faq-list" style="max-width: 800px; margin: 0 auto;">
+        
+        <div class="faq-item">
+          <h3>How do I apply for jobs?</h3>
+          <p>Simply head to our <a href="apply.html" style="color: var(--brand-orange); font-weight: 600;">Apply Now</a> page, complete the form, and upload your resume. Our team will review your details and match you with suitable opportunities near you.</p>
+        </div>
 
-      <div class="faq-item">
-        <h3>What kinds of jobs do you offer?</h3>
-        <p>We match applicants with a variety of roles across industries, based on your skills and preferences.</p>
-      </div>
+        <div class="faq-item">
+          <h3>Is there a fee to apply?</h3>
+          <p>No. We believe in helping workers succeed. Applying through RapidCrew is <strong>completely free</strong> for all job seekers.</p>
+        </div>
 
-      <div class="faq-item">
-        <h3>How soon will I hear back?</h3>
-        <p>Most applicants hear from us within 3–5 business days. If your profile is a good match, we’ll contact you to schedule an interview.</p>
-      </div>
+        <div class="faq-item">
+          <h3>What kinds of jobs do you offer?</h3>
+          <p>We match applicants with a variety of roles across industries, including Construction, Logistics, Administration, and Marketing, depending on your experience and current openings.</p>
+        </div>
 
-      <div class="faq-item">
-        <h3>Do you require ID or background checks?</h3>
-        <p>Yes, we may request a valid ID and conduct a basic background check to ensure compliance with employer requirements.</p>
+        <div class="faq-item">
+          <h3>How soon will I hear back?</h3>
+          <p>Most applicants hear from our recruitment team within 3–5 business days. If your profile matches a current opening, we will reach out to schedule your first interview.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do you require ID or background checks?</h3>
+          <p>Yes. To protect our employers and ensure legal compliance, we require a valid ID and may conduct a standard background check during the placement process.</p>
+        </div>
+
+        <div class="faq-item" style="border-bottom: none;">
+          <h3>Can I apply if I live outside of Texas?</h3>
+          <p>Yes! While we are based in Duncanville, TX, we offer nationwide coverage and help match candidates with opportunities all across the United States.</p>
+        </div>
+
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer -->
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-left">
-      <p>&copy; <span id="year"></span> RapidCrew. Operating since 2016.</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p>&copy; <span id="year"></span> RapidCrew. Operating since 2016.</p>
+        <p><small><a href="privacy.html" style="color:#ccc; text-decoration:none;">Privacy Policy</a></small></p>
+      </div>
+      <div class="footer-right">
+        <p><strong>Contact Us:</strong></p>
+        <!-- Updated Phone -->
+        <p>Phone: <a href="tel:+19188860822" style="color:#fff; text-decoration:none;">(918) 886-0822</a></p>
+        <p>Email: <a href="mailto:info@rapidcrew.online">info@rapidcrew.online</a></p>
+        <p>Address: 762 S. Forest Lane, Duncanville, TX 75116</p>
+      </div>
     </div>
-    <div class="footer-right">
-      <p><strong>Contact Us:</strong></p>
-      <p>Phone: (573) 419-2508 | (214) 898-9694</p>
-      <p>Email: <a href="mailto:info@rapidcrew.online">info@rapidcrew.online</a></p>
-      <p>Address: 762 S. Forest Lane, Duncanville, TX 75116</p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-
-  <!-- JS -->
   <script src="js/main.js"></script>
 </body>
 </html>
-
-
-
