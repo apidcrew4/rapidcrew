@@ -371,3 +371,35 @@ input:focus, select:focus, textarea:focus {
     flex-direction: column;
   }
 }
+
+/* --- Contact Page Specific Fix --- */
+
+/* This targets ONLY the contact page so we don't break the Apply page */
+.page-contact .form-card {
+  margin-top: 20px; /* Removes the negative pull and adds a clean gap */
+}
+
+.page-contact .contact-info {
+  padding-bottom: 20px; /* Ensures the address has its own space */
+}
+
+/* Optional: This makes the Contact Info and Form look more professional on big screens */
+@media (min-width: 992px) {
+  .page-contact .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Address on left, Form on right */
+    gap: 40px;
+    align-items: start;
+    margin-top: 40px;
+  }
+  
+  .page-contact .form-card {
+    margin: 0; /* Removes centering/margins for side-by-side look */
+  }
+  
+  .page-contact .contact-info {
+    text-align: left; /* Aligns text to match the grid */
+    padding-top: 40px;
+  }
+}
+
