@@ -1,18 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>RapidCrew Location</title>
+  
+  <!-- SEO Title: Optimized for Local Search -->
+  <title>Our Location | Find RapidCrew in Duncanville, Texas</title>
+  
+  <!-- SEO Description -->
+  <meta name="description" content="Visit RapidCrew at our Duncanville office. We are a trusted staffing agency connecting job seekers with employment opportunities in Texas and nationwide.">
+  
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JSON-LD Local Business Schema (Crucial for Map Pages) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "RapidCrew",
+    "image": "https://rapidcrew.online/images/logo-horizontal.png",
+    "url": "https://rapidcrew.online/map.html",
+    "telephone": "+19188860822",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "762 S. Forest Lane",
+      "addressLocality": "Duncanville",
+      "addressRegion": "TX",
+      "postalCode": "75116",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 32.6515,
+      "longitude": -96.9083
+    }
+  }
+  </script>
 </head>
 <body class="page-map">
 
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <img src="images/logo-horizontal.png" alt="RapidCrew logo" class="logo">
+      <a href="index.html">
+        <img src="images/logo-horizontal.png" alt="RapidCrew Staffing Logo" class="logo">
+      </a>
+      
       <nav class="main-nav" id="main-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -21,27 +55,43 @@
         <a href="faq.html">FAQ</a>
         <a href="map.html" class="active">Location</a>
       </nav>
+      
       <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">☰</button>
     </div>
   </header>
 
-  <!-- Main -->
   <main>
-    <section class="container location-section">
-      <h1>Find RapidCrew</h1>
-      <p>Our registered office is located at:</p>
-      <p><strong>762 Forest Lane, Duncanville, TX 75116</strong></p>
+    <!-- Simple Location Hero -->
+    <section class="hero-small" style="background: var(--brand-dark); color: white; padding: 60px 0; text-align: center;">
+      <div class="container">
+        <h1>Our Headquarters</h1>
+        <p>Providing nationwide staffing solutions from the heart of Duncanville, Texas.</p>
+      </div>
+    </section>
 
-      <!-- Google Maps Embed -->
-      <div class="map-embed">
+    <!-- Main Location Content -->
+    <section class="container location-section" style="padding: 60px 24px;">
+      <div style="text-align: center; margin-bottom: 40px;">
+        <h2 style="margin-bottom: 10px;">Find Us</h2>
+        <p style="font-size: 1.1rem; color: var(--text-light);">We are located at:</p>
+        <p style="font-size: 1.3rem; font-weight: 700; color: var(--brand-orange);">762 S. Forest Lane, Duncanville, TX 75116</p>
+      </div>
+
+      <!-- Google Maps Embed with Premium Styling -->
+      <div class="map-embed" style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid #e2e8f0;">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.310471161112!2d-96.91735048481445!3d32.64921038101695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e8e1d7b8ed7ad%3A0xe26e2441e5cfbc4!2s762%20Forest%20Ln%2C%20Duncanville%2C%20TX%2075116!5e0!3m2!1sen!2sus!4v1694176823051!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.5123485038!2d-96.9083!3d32.6515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e8e1d7b8ed7ad%3A0xe26e2441e5cfbc4!2s762%20S%20Forest%20Ln%2C%20Duncanville%2C%20TX%2075116!5e0!3m2!1sen!2sus!4v1694176823051!5m2!1sen!2sus"
           width="100%"
-          height="450"
+          height="500"
           style="border:0;"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <!-- Nearby Areas Info (Good for SEO) -->
+      <div style="margin-top: 40px; text-align: center;">
+        <p style="color: var(--text-light);">Serving Duncanville, Dallas, Cedar Hill, and job seekers across the United States.</p>
       </div>
     </section>
   </main>
@@ -51,15 +101,18 @@
     <div class="container footer-inner">
       <div class="footer-left">
         <p>&copy; <span id="year"></span> RapidCrew. Operating since 2016.</p>
+        <p><small><a href="privacy.html" style="color:#ccc; text-decoration:none;">Privacy Policy</a></small></p>
       </div>
       <div class="footer-right">
         <p><strong>Contact Us:</strong></p>
-        <p>Phone: (573) 419-2508 | (214) 898-9694</p>
+        <!-- Updated Phone Number -->
+        <p>Phone: <a href="tel:+19188860822" style="color:#fff; text-decoration:none;">(918) 886-0822</a></p>
         <p>Email: <a href="mailto:info@rapidcrew.online">info@rapidcrew.online</a></p>
-        <p>Address: 762 Forest Lane, Duncanville, TX 75116</p>
+        <p>Address: 762 S. Forest Lane, Duncanville, TX 75116</p>
       </div>
     </div>
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
 </html>
