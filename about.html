@@ -3,98 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | RapidCrew</title>
+  
+  <!-- SEO Title: Targets both Local and National keywords -->
+  <title>About Us | RapidCrew Staffing & Recruitment Experts since 2016</title>
+  
+  <!-- SEO Description -->
+  <meta name="description" content="Learn about RapidCrew's mission. We have been connecting skilled workers with top employers in Duncanville, TX and across the United States since 2016. Fast, reliable hiring.">
+  
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "RapidCrew",
+    "image": "https://rapidcrew.online/images/logo-horizontal.png",
+    "url": "https://rapidcrew.online/about.html",
+    "telephone": "+19188860822",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "762 S. Forest Lane",
+      "addressLocality": "Duncanville",
+      "addressRegion": "TX",
+      "postalCode": "75116",
+      "addressCountry": "US"
+    },
+    "description": "Connecting job seekers with opportunities in Texas and across the USA since 2016."
+  }
+  </script>
 </head>
-<body>
+<body class="page-about">
+
   <!-- Header -->
   <header class="site-header">
-  <div class="container header-inner">
-    <img src="images/logo-horizontal.png" alt="RapidCrew logo" class="logo">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img src="images/logo-horizontal.png" alt="RapidCrew Staffing Logo" class="logo">
+      </a>
 
-    <!-- Navigation -->
-    <nav class="main-nav" id="main-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="apply.html">Apply Now</a>
-        <a href="contact.html">Contact</a>
-        <a href="faq.html">FAQ</a>
-        <a href="map.html" class="active">Location</a>
+      <!-- Navigation: "About" is set to Active -->
+      <nav class="main-nav" id="main-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html" class="active">About</a>
+          <a href="apply.html">Apply Now</a>
+          <a href="contact.html">Contact</a>
+          <a href="faq.html">FAQ</a>
+          <a href="map.html">Location</a>
       </nav>
 
-    <!-- Hamburger -->
-    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">☰</button>
-  </div>
-</header>
-
-  <!-- Hero -->
-  <section class="hero about-hero" style="background-image: url('images/about-hero.jpg')">
-    <div class="hero-inner">
-      <h1>About RapidCrew</h1>
-      <p>Helping people find jobs across the U.S. since 2016</p>
+      <!-- Hamburger Menu for Mobile -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">☰</button>
     </div>
-  </section>
+  </header>
 
-  <!-- About Content -->
-  <section class="about">
-    <div class="container">
-      <h2>Who We Are</h2>
-      <p>
-        Since 2016, RapidCrew has been committed to helping people across the United States find jobs that match their skills and goals. 
-        Whether you’re searching for your first role, looking to change careers, or need something more stable, we make the process quick and stress-free.
-      </p>
-      <p>
-        Our mission is simple: <strong>to connect you with the right opportunity at the right time</strong>. 
-        We review every application carefully and work hard to ensure that your profile is matched with positions that fit your strengths.
-      </p>
-    </div>
-  </section>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero about-hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/about-hero.jpg')">
+      <div class="hero-inner">
+        <h1>About RapidCrew</h1>
+        <p>Helping people find meaningful work across the U.S. since 2016</p>
+      </div>
+    </section>
 
-  <!-- Why Choose Us -->
-  <section class="why-choose-us">
-    <div class="container">
+    <!-- About Content -->
+    <section class="about container">
+      <div class="content-wrapper">
+        <h2>Who We Are</h2>
+        <p>
+          Since 2016, <strong>RapidCrew</strong> has been committed to helping people across the United States find jobs that match their skills and life goals. 
+          Headquartered in Duncanville, Texas, we serve as a bridge between talented individuals and companies looking for reliable staff.
+        </p>
+        <p>
+          Whether you’re searching for your first role, looking to change careers, or need something more stable, we make the process quick and stress-free. Our mission is simple: <strong>to connect you with the right opportunity at the right time.</strong>
+        </p>
+        <p>
+          We review every application carefully and work hard to ensure that your profile is matched with positions that fit your unique strengths and experience levels.
+        </p>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us container">
       <h2>Why Choose RapidCrew?</h2>
       <div class="reasons">
         <div class="reason">
           <h3>Trusted Since 2016</h3>
-          <p>Nearly a decade of experience helping job seekers nationwide.</p>
+          <p>Nearly a decade of experience helping job seekers nationwide find their footing.</p>
         </div>
         <div class="reason">
           <h3>Nationwide Coverage</h3>
-          <p>No matter where you are in the U.S., we’ll match you with opportunities near you.</p>
+          <p>Based in Texas, but operating across the U.S. We match you with opportunities near you.</p>
         </div>
         <div class="reason">
-          <h3>Quick Process</h3>
-          <p>We review your profile promptly so you can move forward without delays.</p>
+          <h3>Quick & Efficient</h3>
+          <p>Our review process is streamlined so you can move from application to interview fast.</p>
         </div>
         <div class="reason">
           <h3>Personalized Matching</h3>
-          <p>Every applicant is unique we focus on roles that truly fit your skills.</p>
+          <p>You aren't just a number. We focus on roles that truly align with your specific skill set.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer -->
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-left">
-      <p>&copy; <span id="year"></span> RapidCrew. Operating since 2016.</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p>&copy; <span id="year"></span> RapidCrew. Operating since 2016.</p>
+        <p><small><a href="privacy.html" style="color:#ccc; text-decoration:none;">Privacy Policy</a></small></p>
+      </div>
+      <div class="footer-right">
+        <p><strong>Contact Us:</strong></p>
+        <!-- Updated to your primary JSON number -->
+        <p>Phone: <a href="tel:+19188860822" style="color:#fff; text-decoration:none;">(918) 886-0822</a></p>
+        <p>Email: <a href="mailto:info@rapidcrew.online">info@rapidcrew.online</a></p>
+        <p>Address: 762 S. Forest Lane, Duncanville, TX 75116</p>
+      </div>
     </div>
-    <div class="footer-right">
-      <p><strong>Contact Us:</strong></p>
-      <p>Phone: (573) 419-2508 | (214) 898-9694</p>
-      <p>Email: <a href="mailto:info@rapidcrew.online">info@rapidcrew.online</a></p>
-      <p>Address: 762 S. Forest Lane, Duncanville, TX 75116</p>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 
   <!-- JS -->
   <script src="js/main.js"></script>
 </body>
 </html>
-
-
-
