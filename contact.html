@@ -3,107 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | RapidCrew</title>
+  
+  <!-- SEO Title: Targeted for Local Duncanville Search -->
+  <title>Contact RapidCrew | Staffing & Employment Agency in Duncanville, TX</title>
+  
+  <!-- SEO Description -->
+  <meta name="description" content="Have questions about hiring or job applications? Contact RapidCrew, your trusted recruitment partner in Duncanville, Texas. Reach us via phone, email, or our online form.">
+  
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "RapidCrew",
+    "image": "https://rapidcrew.online/images/logo-horizontal.png",
+    "url": "https://rapidcrew.online/contact.html",
+    "telephone": "+19188860822",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "762 S. Forest Lane",
+      "addressLocality": "Duncanville",
+      "addressRegion": "TX",
+      "postalCode": "75116",
+      "addressCountry": "US"
+    }
+  }
+  </script>
 </head>
-<body>
+<body class="page-contact">
+
   <!-- Header -->
   <header class="site-header">
-  <div class="container header-inner">
-    <img src="images/logo-horizontal.png" alt="RapidCrew logo" class="logo">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img src="images/logo-horizontal.png" alt="RapidCrew Staffing Logo" class="logo">
+      </a>
 
-    <!-- Navigation -->
-    <nav class="main-nav" id="main-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="apply.html">Apply Now</a>
-        <a href="contact.html">Contact</a>
-        <a href="faq.html">FAQ</a>
-        <a href="map.html" class="active">Location</a>
+      <!-- Navigation: "Contact" is set to Active -->
+      <nav class="main-nav" id="main-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="apply.html">Apply Now</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="faq.html">FAQ</a>
+          <a href="map.html">Location</a>
       </nav>
 
-    <!-- Hamburger -->
-    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">☰</button>
-  </div>
-</header>
-
-  <!-- Hero -->
-  <section class="hero contact-hero" style="background-image: url('images/contact-hero.jpg')">
-    <div class="hero-inner">
-      <h1>Contact Us</h1>
-      <p>We’re here to answer your questions and help you get started.</p>
+      <!-- Hamburger Menu for Mobile -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">☰</button>
     </div>
-  </section>
+  </header>
 
-  <!-- Contact Info -->
-  <section class="contact-info">
-    <div class="container">
-      <h2>Get in Touch</h2>
-      <p>You can reach us directly by phone or email:</p>
-      <ul>
-        <li><strong>Phone:</strong> (573) 419-2508</li>
-        <li><strong>Phone:</strong> (214) 898-9694</li>
-        <li><strong>Email:</strong> info@rapidcrew.online <!-- replace with Zoho email later --></li>
-      </ul>
-    </div>
-  </section>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero contact-hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/contact-hero.jpg')">
+      <div class="hero-inner">
+        <h1>Contact Us</h1>
+        <p>We’re here to answer your questions and help you get started with your career.</p>
+      </div>
+    </section>
 
-  <!-- Contact Form -->
-  <section class="contact-form">
-    <div class="container">
-      <h2>Send Us a Message</h2>
-      <form id="contactForm" method="POST" action="/contact">
-  <div class="form-row">
-    <label>
-      Name
-      <input type="text" name="name" required>
-    </label>
-    <label>
-      Email
-      <input type="email" name="email" required>
-    </label>
-  </div>
-  
-  <div class="form-row">
-    <label>
-      Phone
-      <input type="tel" name="phone" placeholder="+1 (___) ___-____" required>
-    </label>
-  </div>
-  
-  <label>
-    Message
-    <textarea name="message" rows="5" required></textarea>
-  </label>
-  
-  <button type="submit" class="btn-cta">Send Message</button>
-  <div id="contactMessage" class="form-message" aria-live="polite"></div>
-</form>
+    <!-- Contact Info Section -->
+    <section class="contact-info container">
+      <div class="info-grid">
+        <div class="info-item">
+          <h2>Get in Touch</h2>
+          <p>Whether you are an employer looking for talent or a job seeker with questions, we are ready to help.</p>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 15px;">
+              <strong>Primary Phone:</strong> <br>
+              <a href="tel:+19188860822" style="color: var(--brand-orange); text-decoration: none; font-size: 1.2rem; font-weight: 600;">(918) 886-0822</a>
+            </li>
+            <li style="margin-bottom: 15px;">
+              <strong>Email:</strong> <br>
+              <a href="mailto:info@rapidcrew.online" style="color: var(--brand-orange); text-decoration: none;">info@rapidcrew.online</a>
+            </li>
+            <li style="margin-bottom: 15px;">
+              <strong>Office Location:</strong> <br>
+              762 S. Forest Lane, Duncanville, TX 75116
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- Contact Form Section -->
+    <section class="contact-form-section container">
+      <div class="form-card">
+        <h2>Send Us a Message</h2>
+        <!-- Using the same Formcarry ID for consistency, or replace with your contact-specific ID -->
+        <form id="contactForm" method="POST" action="https://formcarry.com/s/bMO2WLT_3zW">
+          <div class="form-row">
+            <label>
+              Full Name
+              <input type="text" name="name" placeholder="John Doe" required>
+            </label>
+            <label>
+              Email Address
+              <input type="email" name="email" placeholder="john@example.com" required>
+            </label>
+          </div>
+          
+          <div class="form-row">
+            <label>
+              Phone Number
+              <input type="tel" name="phone" placeholder="(555) 000-0000" required>
+            </label>
+          </div>
+          
+          <label>
+            How can we help you?
+            <textarea name="message" rows="5" placeholder="Tell us what you are looking for..." required></textarea>
+          </label>
+          
+          <!-- Honeypot for spam -->
+          <div style="display:none;" aria-hidden="true">
+            <input type="text" name="website" tabindex="-1">
+          </div>
+
+          <button type="submit" class="btn-cta">Send Message</button>
+          <div id="contactMessage" class="form-message" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-left">
-      <p>&copy; <span id="year"></span> RapidCrew. Operating since 2016.</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p>&copy; <span id="year"></span> RapidCrew. Operating since 2016.</p>
+        <p><small><a href="privacy.html" style="color:#ccc; text-decoration:none;">Privacy Policy</a></small></p>
+      </div>
+      <div class="footer-right">
+        <p><strong>Contact Us:</strong></p>
+        <p>Phone: <a href="tel:+19188860822" style="color:#fff; text-decoration:none;">(918) 886-0822</a></p>
+        <p>Email: <a href="mailto:info@rapidcrew.online">info@rapidcrew.online</a></p>
+        <p>Address: 762 S. Forest Lane, Duncanville, TX 75116</p>
+      </div>
     </div>
-    <div class="footer-right">
-      <p><strong>Contact Us:</strong></p>
-      <p>Phone: (573) 419-2508 | (214) 898-9694</p>
-      <p>Email: <a href="mailto:info@rapidcrew.online">info@rapidcrew.online</a></p>
-      <p>Address: 762 S. Forest Lane, Duncanville, TX 75116</p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-
-  <!-- JS -->
   <script src="js/main.js"></script>
 </body>
 </html>
-
-
-
-
