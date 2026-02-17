@@ -114,10 +114,10 @@
     <input name="ssn_last4" type="text" pattern="[0-9]{4}" maxlength="4" inputmode="numeric" required>
   </label>
 
-  <!-- Honeypot Spam Protection (Hidden from humans) -->
-  <div style="display:none;" aria-hidden="true">
-    <input name="first_name" type="text" tabindex="-1">
-  </div>
+ <!-- We changed the name to 'sp_check' so Autofill doesn't touch it -->
+<div style="display:none;" aria-hidden="true">
+  <input name="sp_check" type="text" tabindex="-1" autocomplete="off">
+</div>
 
   <label class="consent">
     <input name="consent" type="checkbox" required>
@@ -154,5 +154,6 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+
 
 
