@@ -22,25 +22,28 @@ document.addEventListener("DOMContentLoaded", function () {
   if (applyForm) {
     applyForm.addEventListener("submit", function (e) {
       
-      // Honeypot check (We renamed it to first_name in the HTML)
-      const honeypot = applyForm.querySelector('input[name="first_name"]');
+      // Check our new honeypot name 'sp_check'
+      const honeypot = applyForm.querySelector('input[name="sp_check"]');
+      
       if (honeypot && honeypot.value !== "") {
-        console.log("Bot detected");
+        console.log("Bot detected - submission blocked");
         e.preventDefault();
         return;
       }
 
-      // Visual feedback: Change button text so user doesn't click twice
+      // Visual feedback for the user
       const submitBtn = applyForm.querySelector('button[type="submit"]');
       if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.innerText = "Sending Application...";
-        submitBtn.style.opacity = "0.7";
-        submitBtn.style.cursor = "not-allowed";
+        // We use a tiny delay before disabling the button
+        // so the browser has time to capture the files (CV/ID)
+        setTimeout(() => {
+          submitBtn.disabled = true;
+          submitBtn.innerText = "Sending Application...";
+        }, 100);
       }
       
-      // We let the browser handle the actual POST to Getform 
-      // This ensures Files (CV/ID) are packaged correctly.
+      // We do NOT use e.preventDefault() here.
+      // We let the browser perform the natural POST to Getform.
     });
   }
-});
+}); // End of DOMContentLoaded
